@@ -125,6 +125,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.snl
 *.slnx
 *.vcxproj
 *.vcxproj.filters
