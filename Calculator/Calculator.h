@@ -386,8 +386,6 @@ private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ 
 	label1->Text += "/";
 }
 private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
-	
-	}
 }
 };
 }
