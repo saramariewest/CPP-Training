@@ -386,14 +386,17 @@ private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ 
 	label1->Text += "/";
 }
 private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+	using namespace System::Data;
+	// Using DataTable for calculation (string to equation)
 	try {
-		System::String^ input = label1->Text;
-		// Use DataTable for calculation (string to equation)
-		System::Data::DataTable^ dt = gcnew System::Data::DataTable();
-		System::Object^ result = dt->Compute(input, "");
+		String^ expression = label1->Text;
+
+		DataTable^ table = gcnew DataTable();
+		auto result = table->Compute(expression, "");
+
 		label1->Text = result->ToString();
 	}
-	catch (System::Exception^ ex) {
+	catch (...) {
 		label1->Text = "Error";
 	}
 }
