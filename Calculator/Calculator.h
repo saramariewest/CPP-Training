@@ -1,5 +1,4 @@
 #pragma once
-#using <System.Data.dll>
 
 namespace Calculator {
 
