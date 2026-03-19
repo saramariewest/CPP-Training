@@ -1,4 +1,4 @@
-#include "MyForm.h"
+#include "Calculator.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -7,6 +7,6 @@ using namespace System::Windows::Forms;
 void main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	Calculator::MyForm form;
+	Calculator::Calculator form;
 	Application::Run(% form);
 }

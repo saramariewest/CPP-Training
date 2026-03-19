@@ -11,12 +11,12 @@ namespace Calculator {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Zusammenfassung für MyForm
+	/// Zusammenfassung für Calculator
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class Calculator : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		Calculator(void)
 		{
 			InitializeComponent();
 			//
@@ -28,7 +28,7 @@ namespace Calculator {
 		/// <summary>
 		/// Verwendete Ressourcen bereinigen.
 		/// </summary>
-		~MyForm()
+		~Calculator()
 		{
 			if (components)
 			{
@@ -103,7 +103,7 @@ namespace Calculator {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"1";
 			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->button1->Click += gcnew System::EventHandler(this, &Calculator::button1_Click);
 			// 
 			// button2
 			// 
@@ -115,7 +115,7 @@ namespace Calculator {
 			this->button2->TabIndex = 3;
 			this->button2->Text = L"2";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			this->button2->Click += gcnew System::EventHandler(this, &Calculator::button2_Click);
 			// 
 			// button3
 			// 
@@ -127,7 +127,7 @@ namespace Calculator {
 			this->button3->TabIndex = 4;
 			this->button3->Text = L"3";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			this->button3->Click += gcnew System::EventHandler(this, &Calculator::button3_Click);
 			// 
 			// button4
 			// 
@@ -139,7 +139,7 @@ namespace Calculator {
 			this->button4->TabIndex = 5;
 			this->button4->Text = L"4";
 			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			this->button4->Click += gcnew System::EventHandler(this, &Calculator::button4_Click);
 			// 
 			// button5
 			// 
@@ -151,7 +151,7 @@ namespace Calculator {
 			this->button5->TabIndex = 6;
 			this->button5->Text = L"5";
 			this->button5->UseVisualStyleBackColor = true;
-			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			this->button5->Click += gcnew System::EventHandler(this, &Calculator::button5_Click);
 			// 
 			// button6
 			// 
@@ -163,7 +163,7 @@ namespace Calculator {
 			this->button6->TabIndex = 7;
 			this->button6->Text = L"6";
 			this->button6->UseVisualStyleBackColor = true;
-			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
+			this->button6->Click += gcnew System::EventHandler(this, &Calculator::button6_Click);
 			// 
 			// button7
 			// 
@@ -175,7 +175,7 @@ namespace Calculator {
 			this->button7->TabIndex = 8;
 			this->button7->Text = L"7";
 			this->button7->UseVisualStyleBackColor = true;
-			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
+			this->button7->Click += gcnew System::EventHandler(this, &Calculator::button7_Click);
 			// 
 			// button8
 			// 
@@ -187,7 +187,7 @@ namespace Calculator {
 			this->button8->TabIndex = 9;
 			this->button8->Text = L"8";
 			this->button8->UseVisualStyleBackColor = true;
-			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
+			this->button8->Click += gcnew System::EventHandler(this, &Calculator::button8_Click);
 			// 
 			// button9
 			// 
@@ -199,7 +199,7 @@ namespace Calculator {
 			this->button9->TabIndex = 10;
 			this->button9->Text = L"9";
 			this->button9->UseVisualStyleBackColor = true;
-			this->button9->Click += gcnew System::EventHandler(this, &MyForm::button9_Click);
+			this->button9->Click += gcnew System::EventHandler(this, &Calculator::button9_Click);
 			// 
 			// button10
 			// 
@@ -211,7 +211,7 @@ namespace Calculator {
 			this->button10->TabIndex = 11;
 			this->button10->Text = L"C";
 			this->button10->UseVisualStyleBackColor = true;
-			this->button10->Click += gcnew System::EventHandler(this, &MyForm::button10_Click);
+			this->button10->Click += gcnew System::EventHandler(this, &Calculator::button10_Click);
 			// 
 			// button11
 			// 
@@ -223,7 +223,7 @@ namespace Calculator {
 			this->button11->TabIndex = 12;
 			this->button11->Text = L"0";
 			this->button11->UseVisualStyleBackColor = true;
-			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
+			this->button11->Click += gcnew System::EventHandler(this, &Calculator::button11_Click);
 			// 
 			// button12
 			// 
@@ -235,7 +235,7 @@ namespace Calculator {
 			this->button12->TabIndex = 13;
 			this->button12->Text = L".";
 			this->button12->UseVisualStyleBackColor = true;
-			this->button12->Click += gcnew System::EventHandler(this, &MyForm::button12_Click);
+			this->button12->Click += gcnew System::EventHandler(this, &Calculator::button12_Click);
 			// 
 			// button13
 			// 
@@ -247,7 +247,7 @@ namespace Calculator {
 			this->button13->TabIndex = 14;
 			this->button13->Text = L"+";
 			this->button13->UseVisualStyleBackColor = true;
-			this->button13->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
+			this->button13->Click += gcnew System::EventHandler(this, &Calculator::button13_Click);
 			// 
 			// button14
 			// 
@@ -259,7 +259,7 @@ namespace Calculator {
 			this->button14->TabIndex = 15;
 			this->button14->Text = L"-";
 			this->button14->UseVisualStyleBackColor = true;
-			this->button14->Click += gcnew System::EventHandler(this, &MyForm::button14_Click);
+			this->button14->Click += gcnew System::EventHandler(this, &Calculator::button14_Click);
 			// 
 			// button15
 			// 
@@ -271,7 +271,7 @@ namespace Calculator {
 			this->button15->TabIndex = 16;
 			this->button15->Text = L"*";
 			this->button15->UseVisualStyleBackColor = true;
-			this->button15->Click += gcnew System::EventHandler(this, &MyForm::button15_Click);
+			this->button15->Click += gcnew System::EventHandler(this, &Calculator::button15_Click);
 			// 
 			// button16
 			// 
@@ -283,7 +283,7 @@ namespace Calculator {
 			this->button16->TabIndex = 17;
 			this->button16->Text = L"/";
 			this->button16->UseVisualStyleBackColor = true;
-			this->button16->Click += gcnew System::EventHandler(this, &MyForm::button16_Click);
+			this->button16->Click += gcnew System::EventHandler(this, &Calculator::button16_Click);
 			// 
 			// label1
 			// 
@@ -305,7 +305,7 @@ namespace Calculator {
 			this->button17->TabIndex = 21;
 			this->button17->Text = L"=";
 			this->button17->UseVisualStyleBackColor = true;
-			this->button17->Click += gcnew System::EventHandler(this, &MyForm::button17_Click);
+			this->button17->Click += gcnew System::EventHandler(this, &Calculator::button17_Click);
 			// 
 			// MyForm
 			// 
@@ -330,8 +330,8 @@ namespace Calculator {
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Name = L"Calculator";
+			this->Text = L"Calculator";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
